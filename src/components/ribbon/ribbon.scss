@@ -1,0 +1,26 @@
+.ribbon {  
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  color: #fff;
+
+  
+}
+.banner {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background-color: yellow;
+    position: relative;
+  
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px; /* Adjust the value to change the size of the triangle */
+    border-top: 50px solid transparent; /* Height of the triangle */
+    // border-bottom: 50px solid transparent; /* Height of the triangle */
+    border-bottom: 20px solid #f0f0f0; /* Width and color of the triangle */
+  }
+}
